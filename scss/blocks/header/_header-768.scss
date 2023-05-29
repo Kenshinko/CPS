@@ -1,0 +1,128 @@
+@media (min-width: 321px) and (max-width: 768px) {
+  .background {
+  }
+  .container {
+  }
+  .header {
+    &__menu {
+    }
+
+    &__our-service {
+    }
+
+    &__about-us {
+    }
+  }
+  .head-menu {
+    padding: 0 16px;
+    justify-content: space-between;
+
+    &__left {
+    }
+
+    &__right {
+    }
+
+    &__item {
+      &_addon {
+        display: block;
+      }
+    }
+
+    &__item-separator {
+      &_left {
+        margin: 0 10px;
+        height: 32px;
+        width: 2px;
+        background-color: $separator;
+        content: "";
+      }
+
+      &_right {
+      }
+    }
+  }
+  .menu-item {
+    &__btn {
+    }
+
+    &__icon {
+    }
+  }
+  .our-service {
+    &__headline-box {
+      padding: 24px 24px 32px;
+    }
+
+    &__headline {
+    }
+
+    &__hotline {
+    }
+
+    &__service-list {
+    }
+  }
+  .hotline-list {
+    &__item {
+    }
+  }
+  .hl-item {
+    &__btn {
+    }
+
+    &__icon {
+    }
+  }
+  .service-list {
+    padding-left: 24px;
+
+    &__item {
+
+      &_active {
+      }
+    }
+  }
+  .about-us {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__our-company {
+      padding: 32px 24px;
+      width: 47.8%;
+      height: auto;
+      margin: 0;
+    }
+
+    &__greeting {
+    }
+
+    &__read-more {
+      margin: 10px 0 14px 0;
+
+      & > img {
+        margin-right: 10px;
+      }
+    }
+
+    &__img {
+      max-width: 360px;
+      border-radius: 8px;
+      margin-right: 24px;
+    }
+  }
+  .greeting {
+    &__excerpt:last-child {
+      display: block;
+      margin-top: 25px;
+    }
+
+    &__excerpt {
+      line-height: 1.43em;
+
+      & > span {
+      }
+    }
+  }
+}

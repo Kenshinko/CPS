@@ -1,0 +1,204 @@
+.background {
+  background-color: $bg-color-main;
+}
+.container {
+  min-width: 320px;
+  margin: 0 auto;
+}
+.header {
+  &__menu {
+  }
+
+  &__our-service {
+  }
+
+  &__about-us {
+  }
+}
+.head-menu {
+  padding: 0 8px;
+  height: 88px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-bottom: 1px solid $border-section;
+  background-color: $bg-color-section-header;
+
+  &__left,
+  &__right {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__item {
+    margin: 0 8px;
+
+    &_addon {
+      display: none;
+    }
+  }
+
+  &__item-separator {
+    &_left {
+    }
+
+    &_right {
+      margin: 0 10px;
+      height: 32px;
+      width: 2px;
+      background-color: $separator;
+      content: "";
+    }
+  }
+}
+.menu-item {
+  &__btn {
+    height: 40px;
+    padding: 0;
+    border: none;
+    background-color: $bg-color-section-header;
+
+    &:focus {
+      border-radius: 20px;
+    }
+  }
+
+  &__icon {
+  }
+}
+
+.our-service {
+  &__headline-box {
+    padding: 24px 16px;
+    position: relative;
+
+    &:before {
+      content: "";
+      left: 0;
+      position: absolute;
+      height: 40px;
+      width: 4px;
+      border-radius: 0px 10px 10px 0px;
+      background-color: $headline-decoration;
+    }
+  }
+
+  &__headline {
+    font-family: $fonts-bold;
+    font-size: 2em;
+    line-height: 1.43em;
+    letter-spacing: -0.6px;
+
+    // &:after{
+    //   content: "";
+    //   position: absolute;
+    //   top: 62px;
+    //   right: -16px;
+    //   width: 5%;
+    //   height: 100%;
+    //   background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, $bg-color-main 100%);
+    // }
+  }
+
+  &__hotline {
+  }
+
+  &__service-list {
+  }
+}
+.hotline-list {
+  display: none;
+
+  &__item {
+  }
+}
+.hl-item {
+  &__btn {
+  }
+
+  &__icon {
+  }
+}
+.service-list {
+  display: flex;
+  overflow-x: auto;
+  padding-left: 16px;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  &__btn {
+    padding: 6px 16px;
+    flex-shrink: 0;
+    font-family: $fonts-medium;
+    font-size: 1.15em;
+    line-height: 1.5em;
+    letter-spacing: -0.2px;
+    color: $fonts-service-list;
+    background-color: transparent;
+    border: none;
+
+    &_active {
+      border: 2px solid $border-service-active;
+      border-radius: 6px;
+      background-color: $bg-color-active-btn;
+    }
+  }
+}
+.about-us {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  &__our-company {
+    padding: 24px 16px 0 16px;
+    width: 100%;
+    height: auto;
+  }
+
+  &__greeting {
+  }
+
+  &__read-more {
+    margin: 16px 0;
+    display: flex;
+    justify-content: space-between;
+    background-color: $bg-color-main;
+    border: none;
+    font-family: $fonts-demibold;
+    font-size: 1.15em;
+    line-height: 1.5em;
+    letter-spacing: -0.2px;
+
+    & > img {
+      margin-right: 16px;
+    }
+  }
+
+  &__img {
+    width: 100%;
+    height: auto;
+  }
+}
+.greeting {
+  &__excerpt:last-child {
+    display: none;
+  }
+
+  &__excerpt {
+    font-family: $fonts-medium;
+    font-size: 1em;
+    line-height: 1.29em;
+    letter-spacing: 0.2px;
+
+    & > span {
+      display: none;
+    }
+  }
+    
+  & > br {
+    display: none;
+  }
+}

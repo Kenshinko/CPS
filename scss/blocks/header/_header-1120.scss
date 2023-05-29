@@ -1,0 +1,134 @@
+@media (min-width: 769px) {
+  .background {
+  }
+  .container {
+    max-width: 1120px;
+  }
+  .header {
+    &__menu {
+    }
+
+    &__our-service {
+    }
+
+    &__about-us {
+    }
+  }
+  .head-menu {
+    display: none;
+
+    &__left {
+    }
+
+    &__item {
+      &_addon {
+      }
+    }
+
+    &__item-separator {
+      &_left {
+      }
+
+      &_right {
+      }
+    }
+
+    &__right {
+    }
+  }
+  .menu-item {
+    &__btn {
+    }
+
+    &__icon {
+    }
+  }
+  .our-service {
+    &__headline-box {
+      padding: 42px 32px 8px 32px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &__headline {
+    }
+
+    &__hotline {
+    }
+
+    &__service-list {
+    }
+  }
+  .hotline-list {
+    display: flex;
+
+    &__item {
+      margin-right: 32px;
+    }
+
+    &__item:last-child {
+      margin-right: 0;
+    }
+  }
+  .hl-item {
+    &__btn {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: $bg-color-main;
+      font-family: $fonts-demibold;
+      font-size: 1.15em;
+      line-height: 1.5em;
+      letter-spacing: -0.2px;
+    }
+
+    &__icon {
+      margin-left: 8px;
+    }
+  }
+  .service-list {
+    padding-left: 32px;
+    display: flex;
+    flex-wrap: wrap;
+
+    &__btn {
+      padding: 8px 21px;
+
+      &_active {
+      }
+    }
+  }
+  .about-us {
+    justify-content: space-between;
+
+    &__our-company {
+      padding: 19px 32px;
+      width: 50%;
+    }
+
+    &__greeting {
+    }
+
+    &__read-more {
+    }
+
+    &__img {
+      width: 47%;
+      border-radius: 8px;
+      margin-right: 32px;
+    }
+  }
+  .greeting {
+    &__excerpt:last-child {
+      display: block;
+      margin-top: 25px;
+    }
+
+    &__excerpt {
+      & > span {
+        display: inline;
+      }
+    }
+  }
+}

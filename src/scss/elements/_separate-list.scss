@@ -1,0 +1,21 @@
+.separate-list {
+	@media (min-width: $screen-sm) {
+		position: relative;
+		margin-left: 16px;
+
+		&::after {
+			position: absolute;
+			content: "";
+			left: -16px;
+			top: 50%;
+			transform: translate(-50%, -50%);
+			height: 32px;
+			width: 2px;
+			background-color: $separator;
+
+			@media (min-width: $screen-lg) {
+				display: none;
+			}
+		}
+	}
+}

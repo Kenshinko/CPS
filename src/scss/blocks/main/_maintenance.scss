@@ -1,0 +1,39 @@
+.maintenance {
+	&__list-item {
+		height: 160px;
+
+		&::before {
+			right: 32px;
+			bottom: 23%;
+		}
+
+		&::after {
+			right: 0;
+			bottom: 0;
+		}
+	}
+}
+
+.handling {
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+
+	&__subject {
+		position: relative;
+		display: flex;
+		justify-content: flex-start;
+		width: 90%;
+		@include fonts($fonts-demibold, 1.15em, 1.5em, -0.2px);
+
+		&:after {
+			position: absolute;
+			content: "";
+			top: 333%;
+			left: 64px;
+			width: 128px;
+			height: 128px;
+			transform: translate(-50%, -50%) scale(0.45);
+		}
+	}
+}

@@ -1,0 +1,70 @@
+.item {
+	&__icon {
+		display: block;
+		width: 40px;
+		height: 40px;
+		background: $bg-color-btns url("~/img/icons.png");
+		border-radius: 50%;
+		transition: 0.6s;
+
+		&:hover {
+			background-color: $fonts-main;
+			opacity: 0.85;
+		}
+	}
+
+	&__logo {
+		display: block;
+		position: relative;
+		width: 98px;
+		height: 52px;
+		background: url("~/img/logo.svg");
+
+		@media (min-width: $screen-md) {
+			margin-left: 16px;
+		}
+
+		@media (min-width: $screen-lg) {
+			margin-left: 0;
+		}
+
+		&:after {
+			position: absolute;
+			content: "";
+			right: -16px;
+			top: 50%;
+			transform: translate(-50%, -50%);
+			height: 32px;
+			width: 2px;
+			background-color: $separator;
+
+			@media (min-width: $screen-md) {
+				left: -16px;
+				right: 0;
+			}
+
+			@media (min-width: $screen-lg) {
+				display: none;
+			}
+		}
+	}
+
+	&__text {
+		display: none;
+
+		@media (min-width: $screen-lg) {
+			display: block;
+			margin-right: 8px;
+			@include fonts($fonts-demibold, 1.15em, 1.5em, -0.2px);
+			cursor: default;
+		}
+	}
+
+	&__email {
+		@include fonts($fonts-demibold, 1.15em, 1.5em, -0.2px);
+	}
+
+	&__phone {
+		@include fonts($fonts-bold, 1.7em, 1.33em, -0.6px);
+	}
+}

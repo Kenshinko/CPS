@@ -1,0 +1,95 @@
+.icon-list {
+	background-position: -10px -10px;
+}
+
+.icon-call {
+	background-position: -70px -10px;
+}
+
+.icon-chat {
+	background-position: -10px -70px;
+}
+
+.icon-profile {
+	background-position: -70px -70px;
+}
+
+.icon-repair {
+	background-position: -130px -10px;
+}
+
+.icon-status {
+	background-position: -130px -70px;
+}
+
+.icon-search {
+	background-position: -10px -130px;
+}
+
+.icon-close {
+	display: block;
+	position: relative;
+	background-position: -70px -130px;
+	z-index: 1;
+}
+
+.icon-laptop {
+	&::after {
+		background: url("~/img/maintenance_works.png") 0 -128px;
+	}
+}
+
+.icon-tablet {
+	&::after {
+		background: url("~/img/maintenance_works.png") -128px 0;
+	}
+}
+
+.icon-pc {
+	&::after {
+		background: url("~/img/maintenance_works.png") -128px -128px;
+		transform: translate(-50%, -50%) scale(0.5);
+	}
+}
+
+.icon-monitor {
+	&::after {
+		background: url("~/img/maintenance_works.png") -256px 0;
+		transform: translate(-50%, -50%) scale(0.5);
+	}
+}
+
+.icon-phone {
+	&::after {
+		background: url("~/img/maintenance_works.png") 0 0;
+		transform: translate(-50%, -50%) scale(0.5);
+	}
+}
+
+.icon-tv {
+	&::after {
+		background: url("~/img/maintenance_works.png") -256px -128px;
+		transform: translate(-50%, -50%) scale(0.5);
+	}
+}
+
+.icon-printer {
+	&::after {
+		background: url("~/img/maintenance_works.png") 0 -256px;
+		transform: translate(-50%, -50%) scale(0.5);
+	}
+}
+
+.icon-scanner {
+	&::after {
+		background: url("~/img/maintenance_works.png") -128px -256px;
+		transform: translate(-50%, -50%) scale(0.5);
+	}
+}
+
+.icon-сopymachine {
+	&::after {
+		background: url("~/img/maintenance_works.png") -256px -256px;
+		transform: translate(-50%, -50%) scale(0.5);
+	}
+}

@@ -1,0 +1,72 @@
+.modal {
+	display: flex;
+	position: fixed;
+	margin: 0;
+	top: 0;
+	right: -100vw;
+	flex-direction: column;
+	justify-content: flex-start;
+	padding: 24px 16px;
+	gap: 16px;
+	width: 320px;
+	height: 100vh;
+	background-color: $bg-color-active-btn;
+	z-index: 2;
+	transition: 0.5s;
+
+	@media (min-width: $screen-lg) {
+		padding: 40px 32px;
+	}
+
+	&_showed {
+		right: 0;
+		transform: translate();
+		box-shadow: -16px 0px 52px $modal-window-outer-frame-xs;
+
+		@media (min-width: $screen-md) {
+			box-shadow: $modal-window-outer-frame -16px 0px 52px;
+		}
+
+		@media (min-width: $screen-lg) {
+			width: 440px;
+		}
+
+		&:after {
+			display: none;
+
+			@media (min-width: $screen-md) {
+				display: block;
+				content: "";
+				position: absolute;
+				top: 0;
+				right: 320px;
+				bottom: 0;
+				left: -100vw;
+				background: $modal-window-background;
+				opacity: 0.9;
+			}
+
+			@media (min-width: $screen-lg) {
+				right: 440px;
+			}
+		}
+	}
+
+	&__list {
+		display: flex;
+		flex-direction: column-reverse;
+		gap: 40px;
+
+		@media (min-width: $screen-lg) {
+			align-items: center;
+			align-self: flex-start;
+			flex-direction: row-reverse;
+			position: relative;
+			right: 96px;
+		}
+	}
+
+	&__title {
+		@include fonts($fonts-bold, 1.7em, 1.33em, -0.6px);
+	}
+}

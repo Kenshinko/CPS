@@ -1,0 +1,16 @@
+.brands {
+	&__list-item {
+		height: 72px;
+		align-items: center;
+
+		&::before {
+			right: 32px;
+			top: 44%;
+		}
+
+		&::after {
+			right: 0;
+			top: 50%;
+		}
+	}
+}

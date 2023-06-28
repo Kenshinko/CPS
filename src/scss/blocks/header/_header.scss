@@ -1,0 +1,86 @@
+.header {
+	display: grid;
+	justify-content: space-between;
+	align-items: center;
+	grid-template-columns: auto auto;
+
+	@media (min-width: $screen-lg) {
+		padding: 42px 34px 0 0;
+	}
+
+	&__menu {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		grid-column-start: 1;
+		grid-column-end: -1;
+		height: 88px;
+		padding: 0 16px;
+		background-color: $bg-color-section-header;
+		border-bottom: 1px solid $border-section;
+		box-sizing: border-box;
+
+		@media (min-width: $screen-md) {
+			padding: 0 24px;
+		}
+
+		@media (min-width: $screen-lg) {
+			height: auto;
+			padding: 0;
+			grid-column-start: 2;
+			background-color: transparent;
+			border: none;
+		}
+	}
+
+	&__list {
+		position: relative;
+		display: flex;
+		justify-content: space-between;
+		gap: 16px;
+
+		@media (min-width: $screen-lg) {
+			&:first-child {
+				display: none;
+			}
+		}
+	}
+
+	&__list-item {
+		display: flex;
+		align-items: center;
+	}
+
+	&__sub-list {
+		display: flex;
+		gap: 16px;
+
+		@media (min-width: $screen-lg) {
+			gap: 32px;
+		}
+	}
+
+	&__sub-list-item {
+		@media (min-width: $screen-lg) {
+			display: flex;
+			align-items: center;
+		}
+	}
+
+	&__title {
+		position: relative;
+		padding: 24px 16px;
+		@include fonts($fonts-bold, 2em, 1.43em, -0.6px);
+		white-space: nowrap;
+
+		@media (min-width: $screen-md) {
+			padding: 24px 24px 24px 24px;
+		}
+
+		@media (min-width: $screen-lg) {
+			padding: 0 34px;
+			grid-row-start: 1;
+			grid-column-end: 1;
+		}
+	}
+}

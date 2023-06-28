@@ -1,10 +1,12 @@
 // Получаем элемент боковой панели и кнопку, которая ее активирует
 const sidebar = document.querySelector('.sidebar');
 const sidebarOpenButton = document.querySelector('.icon-list');
-// Собираем со страницы все кнопки, закрывающие окна
+// Собираем со страницы все элементы, закрывающие окна
 const modalsCloseBtns = Array.from(document.querySelectorAll('.icon-close'));
-// Извлекаем первый элемент из массива. Это кнопка для сайдбара
-const sidebarCloseButton = modalsCloseBtns.shift();
+const modalsCloseBG = Array.from(document.querySelectorAll('.bg-field'));
+// Извлекаем первые элементы из двух верхних массивов. Это кнопки для закрытия
+// сайдбара. Запихиваем их в новый массив
+const sidebarCloseBtns = [modalsCloseBtns.shift(), modalsCloseBG.shift()];
 // Собираем со страницы все кнопки, открывающие секции
 const btnsShowAll = Array.from(document.querySelectorAll('.show-all'));
 // Извлекаем первый элемент из массива. Это кнопка для статьи
@@ -27,8 +29,10 @@ sidebarOpenButton.addEventListener('click', () => {
 })
 
 // Закрыть боковое меню
-sidebarCloseButton.addEventListener('click', () => {
-	sidebar.classList.remove('sidebar_active');
+sidebarCloseBtns.forEach((btn) => {
+	btn.addEventListener('click', () => {
+		sidebar.classList.remove('sidebar_active');
+	});
 })
 
 // Кнопки "Читать далее" и "Показать все"
@@ -90,6 +94,13 @@ modalWindowEmailBtns.forEach((btn) => {
 // Благодяря тому, что мы собрали модальные окна в массив, мы может соотнести их
 // по индексам с коллекцией кнопок
 modalsCloseBtns.forEach((btn, idx) => {
+	btn.addEventListener('click', () => {
+		sidebar.classList?.remove('sidebar_active');
+		modalWindows[idx].classList.remove('modal_showed');
+	});
+})
+
+modalsCloseBG.forEach((btn, idx) => {
 	btn.addEventListener('click', () => {
 		sidebar.classList?.remove('sidebar_active');
 		modalWindows[idx].classList.remove('modal_showed');

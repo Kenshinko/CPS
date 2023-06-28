@@ -1,7 +1,7 @@
 .headline {
 	position: relative;
 
-	&:not(.item__phone):before {
+	&:not(.box__link-phone):before {
 		position: absolute;
 		content: "";
 		left: -14px;
@@ -15,5 +15,9 @@
 
 	&.header__title:before {
 		left: 2px;
+
+		@media (min-width: $screen-lg) {
+			left: 4px;
+		}
 	}
 }

@@ -2,6 +2,8 @@
 	&__list-item {
 		height: 72px;
 		align-items: center;
+		justify-content: space-between;
+		flex-grow: 1;
 
 		&::before {
 			right: 32px;

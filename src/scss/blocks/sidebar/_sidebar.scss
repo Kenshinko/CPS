@@ -2,45 +2,19 @@
 	display: flex;
 	position: fixed;
 	top: 0;
-	left: -150%;
+	left: -100%;
 	flex-direction: column;
 	justify-content: space-between;
-	padding: 18px 16px 32px 16px;
 	gap: 8px;
 	width: 320px;
 	height: 100vh;
-	background-color: $bg-color-active-btn;
-	box-shadow: 16px 0px 52px $modal-window-outer-frame-xs;
 	z-index: 1;
 	transition: 0.5s;
 
-	@media (min-width: $screen-md) {
-		box-shadow: $modal-window-outer-frame 16px 0px 52px;
-	}
-
 	&_active {
+		width: 100%;
 		left: 0;
 		transform: translate();
-	}
-
-	&:after {
-		display: none;
-
-		@media (min-width: $screen-md) {
-			display: block;
-			content: "";
-			position: absolute;
-			top: 0;
-			right: -100vw;
-			bottom: 0;
-			left: 320px;
-			background: $modal-window-background;
-			opacity: 0.9;
-		}
-
-		@media (min-width: $screen-lg) {
-			display: none;
-		}
 	}
 
 	@media (min-width: $screen-md) {
@@ -48,37 +22,6 @@
 	}
 
 	@media (min-width: $screen-lg) {
-		display: flex;
 		position: sticky;
-		padding: 24px 24px 32px 24px;
-		min-width: 320px;
-		box-shadow: none;
-	}
-
-	& > .sidebar__list:first-child > li:first-child {
-		@media (min-width: $screen-lg) {
-			display: none;
-		}
-	}
-
-	&__list {
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		gap: 16px;
-
-		&:not(:first-child) {
-			flex-direction: column;
-			align-items: flex-start;
-		}
-
-		& > .item:nth-child(2) {
-			flex-grow: 1;
-		}
-	}
-
-	&__sub-list {
-		display: flex;
-		gap: 16px;
 	}
 }

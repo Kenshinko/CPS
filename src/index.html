@@ -12,174 +12,147 @@
 	<div class="page">
 
 		<aside class="page__sidebar sidebar">
+			<div class="sidebar__wrapper bg-field"></div>
 
-			<ul class="sidebar__list">
-				<li class="sidebar__list-item item">
-					<button class="item__icon icon-close"></button>
-				</li>
-				<li class="sidebar__list-item item">
-					<a class="item__logo" href="#"></a>
-				</li>
-				<li class="sidebar__list-item item">
-					<button class="item__icon icon-search"></button>
-				</li>
-			</ul>
+			<div class="sidebar__content modal-window-box">
+				<div class="sidebar__holder box">
+					<button class="box__btn icon icon-close"></button>
+					<a class="box__link logo" href="#"></a>
+					<button class="box__btn icon icon-search"></button>
+				</div>
 
-			<nav class="sidebar__aside-nav aside-nav">
-				<ul class="aside-nav__list">
-					<li class="aside-nav__item">
-						<a class="aside-nav__link" href="#">Ремонт техники</a>
-					</li>
-					<li class="aside-nav__item">
-						<a class="aside-nav__link" href="#">Услуги и сервисы</a>
-					</li>
-					<li class="aside-nav__item">
-						<a class="aside-nav__link" href="#">Корпоративным клиентам</a>
-					</li>
-					<li class="aside-nav__item">
-						<a class="aside-nav__link" href="#">Продавцам техники</a>
-					</li>
-					<li class="aside-nav__item">
-						<a class="aside-nav__link" href="#">Партнерам</a>
-					</li>
-					<li class="aside-nav__item">
-						<a class="aside-nav__link" href="#">Производителям</a>
-					</li>
-					<li class="aside-nav__item">
-						<a class="aside-nav__link" href="#">Наши сервисные центры</a>
-					</li>
-					<li class="aside-nav__item">
-						<a class="aside-nav__link" href="#">Контакты</a>
-					</li>
-				</ul>
-			</nav>
-
-			<ul class="sidebar__list">
-				<li class="sidebar__list-item">
-					<ul class="sidebar__sub-list">
-						<li class="sidebar__sub-list-item item">
-							<button class="item__icon icon-call"></button>
+				<nav class="sidebar__aside-nav aside-nav">
+					<ul class="aside-nav__list">
+						<li class="aside-nav__item">
+							<a class="aside-nav__link" href="#">Ремонт техники</a>
 						</li>
-						<li class="sidebar__sub-list-item item">
-							<button class="item__icon icon-chat"></button>
+						<li class="aside-nav__item">
+							<a class="aside-nav__link" href="#">Услуги и сервисы</a>
 						</li>
-						<li class="sidebar__sub-list-item item">
-							<button class="item__icon icon-profile"></button>
+						<li class="aside-nav__item">
+							<a class="aside-nav__link" href="#">Корпоративным клиентам</a>
+						</li>
+						<li class="aside-nav__item">
+							<a class="aside-nav__link" href="#">Продавцам техники</a>
+						</li>
+						<li class="aside-nav__item">
+							<a class="aside-nav__link" href="#">Партнерам</a>
+						</li>
+						<li class="aside-nav__item">
+							<a class="aside-nav__link" href="#">Производителям</a>
+						</li>
+						<li class="aside-nav__item">
+							<a class="aside-nav__link" href="#">Наши сервисные центры</a>
+						</li>
+						<li class="aside-nav__item">
+							<a class="aside-nav__link" href="#">Контакты</a>
 						</li>
 					</ul>
-				</li>
-				<li class="sidebar__list-item item">
-					<a class="item__email" href="mailto:mail@cps.com">mail@cps.com</a>
-				</li>
-				<li class="sidebar__list-item item">
-					<a class="item__phone headline" href="tel:88008908900">8 800 890 8900</a>
-				</li>
-			</ul>
+				</nav>
 
-			<form class="sidebar__lang-list lang-widget" action="">
-				<input id="RU" class="lang-widget__btn" type="radio" name="select-language" checked>
-				<label for="RU" class="lang-widget__list-item">RU</label>
+				<div class="sidebar__holder box">
+					<div class="box__btns-list">
+						<button class="box__btn icon icon-call"></button>
+						<button class="box__btn icon icon-chat"></button>
+						<button class="box__btn icon icon-profile"></button>
+					</div>
+					<a class="box__link-email" href="mailto:mail@cps.com">mail@cps.com</a>
+					<a class="box__link-phone headline" href="tel:88008908900">8 800 890 8900</a>
+				</div>
 
-				<input id="EN" class="lang-widget__btn" type="radio" name="select-language">
-				<label for="EN" class="lang-widget__list-item">EN</label>
+				<form class="sidebar__lang-list lang-widget" action="">
+					<input id="RU" class="lang-widget__btn" type="radio" name="select-language" checked>
+					<label for="RU" class="lang-widget__list-item">RU</label>
 
-				<input id="CH" class="lang-widget__btn" type="radio" name="select-language">
-				<label for="CH" class="lang-widget__list-item">CH</label>
-			</form>
+					<input id="EN" class="lang-widget__btn" type="radio" name="select-language">
+					<label for="EN" class="lang-widget__list-item">EN</label>
+
+					<input id="CH" class="lang-widget__btn" type="radio" name="select-language">
+					<label for="CH" class="lang-widget__list-item">CH</label>
+				</form>
+			</div>
 		</aside>
 
 		<section class="page__modal-phone modal">
-			<ul class="modal__list">
-				<li class="modal__list-item">
+			<div class="modal__wrapper bg-field"></div>
+
+			<div class="modal__content modal-window-box">
+				<div class="modal__header">
 					<h2 class="modal__title headline">Заказать звонок</h2>
-				</li>
-				<li class="modal__list-item item">
-					<button class="item__icon icon-close" type="button"></button>
-				</li>
-			</ul>
+					<button class="modal__close-btn icon icon-close" type="button"></button>
+				</div>
 
-			<form class="modal__form form" action="">
-				<input class="form__input" type="tel" placeholder="Телефон">
-				<p class="form__desc">Нажимая “отправить”, вы даете согласие на
-					<a href="#" class="form__decs-link">обработку персональных данных</a>
-					и соглашаетесь с нашей
-					<a href="#" class="form__decs-link">политикой конфиденциальности</a>
-				</p>
-			</form>
-
-			<button class="modal__form-btn wide-btn" type="button">
-				<span class="wide-btn__text">Отправить</span>
-			</button>
+				<form class="modal__form form" action="">
+					<input class="form__input" type="tel" placeholder="Телефон" required>
+					<p class="form__desc">Нажимая “отправить”, вы даете согласие на
+						<a href="#" class="form__decs-link">обработку персональных данных</a>
+						и соглашаетесь с нашей
+						<a href="#" class="form__decs-link">политикой конфиденциальности</a>
+					</p>
+					<button class="modal__form-btn wide-btn" type="submit">
+						<span class="wide-btn__text">Отправить</span>
+					</button>
+				</form>
+			</div>
 		</section>
 
 		<section class="page__modal-email modal">
-			<ul class="modal__list">
-				<li class="modal__list-item">
+			<div class="modal__wrapper bg-field"></div>
+
+			<div class="modal__content modal-window-box">
+				<div class="modal__header">
 					<h2 class="modal__title headline">Обратная связь</h2>
-				</li>
-				<li class="modal__list-item item">
-					<button class="item__icon icon-close" type="button"></button>
-				</li>
-			</ul>
+					<button class="modal__close-btn icon icon-close" type="button"></button>
+				</div>
 
-			<form class="modal__form form" action="">
-				<input class="form__input" type="text" placeholder="Имя">
-				<input class="form__input" type="tel" placeholder="Телефон">
-				<input class="form__input" type="email" placeholder="Электронная почта">
-				<textarea class="form__input" type="textarea" rows="6" placeholder="Сообщение"></textarea>
-				<p class="form__desc">Нажимая “отправить”, вы даете согласие на
-					<a href="#" class="form__decs-link">обработку персональных данных</a>
-					и соглашаетесь с нашей
-					<a href="#" class="form__decs-link">политикой конфиденциальности</a>
-				</p>
-			</form>
-
-			<button class="modal__form-btn wide-btn" type="button">
-				<span class="wide-btn__text">Отправить</span>
-			</button>
+				<form class="modal__form form" action="">
+					<input class="form__input" type="text" placeholder="Имя" required>
+					<input class="form__input" type="tel" placeholder="Телефон">
+					<input class="form__input" type="email" placeholder="Электронная почта" required>
+					<textarea class="form__input" type="textarea" rows="6" placeholder="Сообщение" required></textarea>
+					<p class="form__desc">Нажимая “отправить”, вы даете согласие на
+						<a href="#" class="form__decs-link">обработку персональных данных</a>
+						и соглашаетесь с нашей
+						<a href="#" class="form__decs-link">политикой конфиденциальности</a>
+					</p>
+					<button class="modal__form-btn wide-btn" type="submit">
+						<span class="wide-btn__text">Отправить</span>
+					</button>
+				</form>
+			</div>
 		</section>
 
 		<div class="page__content">
 
 			<header class="page__header header">
-				<nav class="header__menu">
-					<ul class="header__list">
-						<li class="header__list-item item">
-							<button class="item__icon icon-list"></button>
-						</li>
-						<li class="header__list-item item">
-							<a class="item__logo" href="#"></a>
-						</li>
-					</ul>
+				<div class="header__menu">
+					<div class="header__elements-list">
+						<button class="icon icon-list"></button>
+						<div class="header__logo-box">
+							<a class="logo" href="#"></a>
+						</div>
+					</div>
 
-					<ul class="header__list">
-						<li class="header__list-item">
-							<ul class="header__sub-list addon-list">
-								<li class="header__sub-list-item item">
-									<button class="item__icon icon-call"></button>
-								</li>
-								<li class="header__sub-list-item item">
-									<button class="item__icon icon-chat"></button>
-								</li>
-								<li class="header__sub-list-item item">
-									<button class="item__icon icon-profile"></button>
-								</li>
-							</ul>
-						</li>
-						<li class="header__list-item">
-							<ul class="header__sub-list separate-list">
-								<li class="header__sub-list-item item">
-									<span class="item__text">Оставить заявку</span>
-									<button class="item__icon icon-repair"></button>
-								</li>
-								<li class="header__sub-list-item item">
-									<span class="item__text">Статус ремонта</span>
-									<button class="item__icon icon-status"></button>
-								</li>
-							</ul>
-						</li>
-					</ul>
-				</nav>
+					<div class="header__right-list">
+						<div class="header__elements-list addon-list">
+							<button class="icon icon-call"></button>
+							<button class="icon icon-chat"></button>
+							<button class="icon icon-profile"></button>
+						</div>
+
+						<div class="header__elements-list corner-list">
+							<div class="header__label-box">
+								<label for="repair" class="header__label">Оставить заявку</label>
+								<button id="repair" class="icon icon-repair"></button>
+							</div>
+							<div class="header__label-box">
+								<label for="status" class="header__label">Статус ремонта</label>
+								<button id="status" class="icon icon-status"></button>
+							</div>
+						</div>
+
+					</div>
+				</div>
 
 				<h1 class="header__title headline">Услуги и сервисы</h1>
 			</header>
@@ -230,51 +203,80 @@
 
 					<div class="brands__list directory" data-mobile="false">
 						<div class="brands__wrap directory-wrap">
-							<button class="brands__list-item brand-name item-list" type="button">
+							<div class="brands__list-item brand-name item-list">
 								<img class="brand-name__logo" src="~/img/brands/brand_lenovo.png" alt="lenovo">
-							</button>
-							<button class="brands__list-item brand-name item-list" type="button">
+								<button class="brand-name__btn round-btn" type="button"></button>
+							</div>
+
+							<div class="brands__list-item brand-name item-list">
 								<img class="brand-name__logo" src="./img/brands/brand_samsung.png" alt="samsung">
-							</button>
-							<button class="brands__list-item brand-name item-list" type="button">
+								<button class="brand-name__btn round-btn" type="button"></button>
+							</div>
+
+							<div class="brands__list-item brand-name item-list">
 								<img class="brand-name__logo" src="./img/brands/brand_apple.png" alt="apple">
-							</button>
-							<button class="brands__list-item brand-name item-list" type="button">
+								<button class="brand-name__btn round-btn" type="button"></button>
+							</div>
+
+							<div class="brands__list-item brand-name item-list">
 								<img class="brand-name__logo" src="~/img/brands/brand_viewsonic.png" alt="viewsonic">
-							</button>
-							<button class="brands__list-item brand-name item-list" type="button">
+								<button class="brand-name__btn round-btn" type="button"></button>
+							</div>
+
+							<div class="brands__list-item brand-name item-list">
 								<img class="brand-name__logo" src="~/img/brands/brand_bosch.png" alt="bosch">
-							</button>
-							<button class="brands__list-item brand-name item-list" type="button">
+								<button class="brand-name__btn round-btn" type="button"></button>
+							</div>
+
+							<div class="brands__list-item brand-name item-list">
 								<img class="brand-name__logo" src="~/img/brands/brand_hp.png" alt="hp">
-							</button>
-							<button class="brands__list-item brand-name item-list" type="button">
+								<button class="brand-name__btn round-btn" type="button"></button>
+							</div>
+
+							<div class="brands__list-item brand-name item-list">
 								<img class="brand-name__logo" src="~/img/brands/brand_acer.png" alt="acer">
-							</button>
-							<button class="brands__list-item brand-name item-list" type="button">
+								<button class="brand-name__btn round-btn" type="button"></button>
+							</div>
+
+							<div class="brands__list-item brand-name item-list">
 								<img class="brand-name__logo" src="~/img/brands/brand_sony.png" alt="sony">
-							</button>
-							<button class="brands__list-item brand-name item-list" type="button">
+								<button class="brand-name__btn round-btn" type="button"></button>
+							</div>
+
+							<div class="brands__list-item brand-name item-list">
 								<img class="brand-name__logo" src="~/img/brands/brand_asus.png" alt="asus">
-							</button>
-							<button class="brands__list-item brand-name item-list" type="button">
+								<button class="brand-name__btn round-btn" type="button"></button>
+							</div>
+
+							<div class="brands__list-item brand-name item-list">
 								<img class="brand-name__logo" src="~/img/brands/brand_compaq.png" alt="compaq">
-							</button>
-							<button class="brands__list-item brand-name item-list" type="button">
+								<button class="brand-name__btn round-btn" type="button"></button>
+							</div>
+
+							<div class="brands__list-item brand-name item-list">
 								<img class="brand-name__logo" src="~/img/brands/brand_gigabyte.png" alt="gigabyte">
-							</button>
-							<button class="brands__list-item brand-name item-list" type="button">
+								<button class="brand-name__btn round-btn" type="button"></button>
+							</div>
+
+							<div class="brands__list-item brand-name item-list">
 								<img class="brand-name__logo" src="~/img/brands/brand_lg.png" alt="lg">
-							</button>
-							<button class="brands__list-item brand-name item-list" type="button">
+								<button class="brand-name__btn round-btn" type="button"></button>
+							</div>
+
+							<div class="brands__list-item brand-name item-list">
 								<img class="brand-name__logo" src="~/img/brands/brand_msi.png" alt="msi">
-							</button>
-							<button class="brands__list-item brand-name item-list" type="button">
+								<button class="brand-name__btn round-btn" type="button"></button>
+							</div>
+
+							<div class="brands__list-item brand-name item-list">
 								<img class="brand-name__logo" src="~/img/brands/brand_packardbell.png" alt="packardbell">
-							</button>
-							<button class="brands__list-item brand-name item-list" type="button">
+								<button class="brand-name__btn round-btn" type="button"></button>
+							</div>
+
+							<div class="brands__list-item brand-name item-list">
 								<img class="brand-name__logo" src="~/img/brands/brand_panasonic.png" alt="panasonic">
-							</button>
+								<button class="brand-name__btn round-btn" type="button"></button>
+							</div>
 						</div>
 						<div class="brands__list-pagination pagination"></div>
 					</div>
@@ -285,30 +287,54 @@
 					<h2 class="maintenance__title subtitle">Ремонт различных видов техники</h2>
 					<div class="maintenance__list directory">
 						<div class="maintenance__wrap directory-wrap">
-							<button class="maintenance__list-item handling item-list" type="button">
-								<span class="handling__subject icon-laptop">Ремонт ноутбуков</span>
-							</button>
-							<button class="maintenance__list-item handling item-list" type="button">
-								<span class="handling__subject icon-tablet">Ремонт планшетов</span>
-							</button>
-							<button class="maintenance__list-item handling item-list" type="button">
-								<span class="handling__subject icon-pc">Ремонт ПК</span>
-							</button>
-							<button class="maintenance__list-item handling item-list" type="button">
-								<span class="handling__subject icon-monitor">Ремонт мониторов</span>
-							</button>
-							<button class="maintenance__list-item handling item-list" type="button">
-								<span class="handling__subject icon-phone">Ремонт телефонов</span>
-							</button>
-							<button class="maintenance__list-item handling item-list" type="button">
-								<span class="handling__subject icon-tv">Ремонт телевизоров</span>
-							</button>
-							<button class="maintenance__list-item handling item-list" type="button">
-								<span class="handling__subject icon-printer">Ремонт принтеров</span>
-							</button>
-							<button class="maintenance__list-item handling item-list" type="button">
-								<span class="handling__subject icon-scanner">Ремонт сканеров</span>
-							</button>
+							<div class="maintenance__list-item handling item-list">
+								<label class="handling__subject">Ремонт ноутбуков
+									<button class="handling__btn round-btn" type="button"></button>
+								</label>
+								<div class="handling__icon icon-laptop"></div>
+							</div>
+							<div class="maintenance__list-item handling item-list">
+								<label class="handling__subject">Ремонт планшетов
+									<button class="handling__btn round-btn" type="button"></button>
+								</label>
+								<div class="handling__icon icon-tablet"></div>
+							</div>
+							<div class="maintenance__list-item handling item-list">
+								<label class="handling__subject">Ремонт ПК
+									<button class="handling__btn round-btn" type="button"></button>
+								</label>
+								<div class="handling__icon icon-pc"></div>
+							</div>
+							<div class="maintenance__list-item handling item-list">
+								<label class="handling__subject">Ремонт мониторов
+									<button class="handling__btn round-btn" type="button"></button>
+								</label>
+								<div class="handling__icon icon-monitor"></div>
+							</div>
+							<div class="maintenance__list-item handling item-list">
+								<label class="handling__subject">Ремонт телефонов
+									<button class="handling__btn round-btn" type="button"></button>
+								</label>
+								<div class="handling__icon icon-phone"></div>
+							</div>
+							<div class="maintenance__list-item handling item-list">
+								<label class="handling__subject">Ремонт телевизоров
+									<button class="handling__btn round-btn" type="button"></button>
+								</label>
+								<div class="handling__icon icon-tv"></div>
+							</div>
+							<div class="maintenance__list-item handling item-list">
+								<label class="handling__subject">Ремонт принтеров
+									<button class="handling__btn round-btn" type="button"></button>
+								</label>
+								<div class="handling__icon icon-printer"></div>
+							</div>
+							<div class="maintenance__list-item handling item-list">
+								<label class="handling__subject">Ремонт сканеров
+									<button class="handling__btn round-btn" type="button"></button>
+								</label>
+								<div class="handling__icon icon-scanner"></div>
+							</div>
 						</div>
 						<div class="maintenance__list-pagination pagination"></div>
 					</div>

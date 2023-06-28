@@ -45,10 +45,37 @@
 }
 
 .wide-btn,
-.item__icon {
+.icon {
 	&:focus {
 		outline: 2px solid $fonts-main;
 		outline-offset: 2px;
 		transition: 0.1s;
+	}
+}
+
+.round-btn {
+	display: flex;
+	position: relative;
+	width: 40px;
+	height: 40px;
+	background-color: transparent;
+	border: 2px solid $bg-color-btns;
+	border-radius: 50%;
+	cursor: pointer;
+
+	&:not(.terms) {
+		align-self: flex-end;
+	}
+
+	&:not(.terms):before {
+		content: "";
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		width: 8px;
+		height: 8px;
+		border-right: 2px solid $bg-color-btns;
+		border-bottom: 2px solid $bg-color-btns;
+		transform: translate(-65%, -50%) rotate(-45deg);
 	}
 }

@@ -15,6 +15,7 @@ console.log(`Сборка запущена в режиме ${process.env.NODE_EN
 
 const optimization = () => {
   const config = {
+		runtimeChunk: 'single',
     splitChunks: {
       chunks: 'all',
     }
@@ -153,7 +154,7 @@ module.exports = {
 		}),
 		new CleanWebpackPlugin(),
 		new MiniCssExtractPlugin({
-			filename: 'css/[name].[hash].css',
+			filename: 'css/[name].[contenthash].css',
 		}),
 		new ESLintPlugin(),
 	]

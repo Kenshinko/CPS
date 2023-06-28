@@ -18,7 +18,6 @@
 		padding: 0 16px;
 		background-color: $bg-color-section-header;
 		border-bottom: 1px solid $border-section;
-		box-sizing: border-box;
 
 		@media (min-width: $screen-md) {
 			padding: 0 24px;
@@ -33,37 +32,77 @@
 		}
 	}
 
-	&__list {
-		position: relative;
+	&__logo-box {
 		display: flex;
-		justify-content: space-between;
+		position: relative;
+		justify-content: center;
+
+		@media (min-width: $screen-sm) {
+			width: 128px;
+		}
+
+		&:after {
+			position: absolute;
+			content: "";
+			right: -20px;
+			top: 50%;
+			transform: translate(-50%, -50%);
+			height: 32px;
+			width: 2px;
+			background-color: $separator;
+
+			@media (min-width: $screen-sm) {
+				left: 0;
+			}
+
+			@media (min-width: $screen-lg) {
+				display: none;
+			}
+		}
+	}
+
+	&__right-list {
+		display: flex;
+		position: relative;
+		gap: 42px;
+	}
+
+	&__elements-list {
+		display: flex;
+		position: relative;
+		align-items: center;
 		gap: 16px;
 
 		@media (min-width: $screen-lg) {
+			gap: 32px;
+
 			&:first-child {
 				display: none;
 			}
 		}
 	}
 
-	&__list-item {
+	&__label-box {
 		display: flex;
-		align-items: center;
-	}
-
-	&__sub-list {
-		display: flex;
-		gap: 16px;
+		justify-content: space-between;
 
 		@media (min-width: $screen-lg) {
-			gap: 32px;
+			width: 173px;
 		}
 	}
 
-	&__sub-list-item {
+	&__label {
+		display: none;
+
 		@media (min-width: $screen-lg) {
-			display: flex;
-			align-items: center;
+			display: block;
+			@include fonts($fonts-demibold, 1.15em, 1.5em, -0.2px);
+			align-self: center;
+			cursor: default;
+		}
+
+		&:hover {
+			color: $fonts-alt;
 		}
 	}
 

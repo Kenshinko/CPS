@@ -1,12 +1,11 @@
-.separate-list {
+.corner-list {
 	@media (min-width: $screen-sm) {
 		position: relative;
-		margin-left: 16px;
 
 		&::after {
 			position: absolute;
 			content: "";
-			left: -16px;
+			left: -21px;
 			top: 50%;
 			transform: translate(-50%, -50%);
 			height: 32px;

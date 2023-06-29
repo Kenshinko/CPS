@@ -15,6 +15,7 @@
 @import "./blocks/footer/_about-us.scss";
 
 @import "./blocks/sidebar/_sidebar.scss";
+@import "./blocks/sidebar/_box.scss";
 @import "./blocks/sidebar/_navigation.scss";
 @import "./blocks/sidebar/_lang-widget.scss";
 
@@ -27,16 +28,17 @@
 @import "./elements/_headline.scss";
 @import "./elements/_subtitle.scss";
 @import "./elements/_alt-text.scss";
-@import "./elements/_item.scss";
 @import "./elements/_icons.scss";
 @import "./elements/_directory.scss";
 @import "./elements/_directory-wrap.scss";
 @import "./elements/_addon-list.scss";
-@import "./elements/_separate-list.scss";
+@import "./elements/_corner-list.scss";
 @import "./elements/_item-list.scss";
 @import "./elements/_show-all.scss";
-@import "./elements/_wide-btn.scss";
+@import "./elements/_btns.scss";
 @import "./elements/_sliders.scss";
+@import "./elements/_bg-field.scss";
+@import "./elements/_modal-window-box.scss";
 
 @import "swiper/scss";
 @import "swiper/scss/autoplay";

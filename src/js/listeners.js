@@ -20,8 +20,11 @@ const modalWindowPhoneBtns = document.querySelectorAll('.icon-call');
 const modalWindowPhone = document.querySelector('.page__modal-phone');
 const modalWindowEmailBtns = document.querySelectorAll('.icon-chat');
 const modalWindowEmail = document.querySelector('.page__modal-email');
-
+// Собираем корневые элементы модальных окон в массив
 const modalWindows = [modalWindowPhone, modalWindowEmail];
+// Собираем все элементы из слайдеров в одну коллекцию
+const services = document.querySelectorAll('.item-list');
+
 
 // Открыть боковое меню
 sidebarOpenButton.addEventListener('click', () => {
@@ -118,3 +121,12 @@ function hideElementOnEscape(event) {
 }
 
 window.addEventListener('keydown', hideElementOnEscape);
+
+// На каждый элемент вешаем событие, при клике открывающее модальное окно с меню
+services.forEach((el) => {
+	el.addEventListener('click', () => {
+		if (document.documentElement.clientWidth <= 767) {
+			sidebar.classList.add('sidebar_active');
+		}
+	});
+})
